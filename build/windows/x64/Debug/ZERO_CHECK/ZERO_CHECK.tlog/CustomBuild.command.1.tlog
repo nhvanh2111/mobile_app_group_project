@@ -1,0 +1,10 @@
+^D:\FPT\CN7\MOBILE_APP_GROUP_PROJECT-MASTER\MOBILE_APP_GROUP_PROJECT-MASTER\BUILD\WINDOWS\CMAKEFILES\9E36444E5A3960380E08A51CA0B581AB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/FPT/CN7/mobile_app_group_project-master/mobile_app_group_project-master/windows -BD:/FPT/CN7/mobile_app_group_project-master/mobile_app_group_project-master/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/FPT/CN7/mobile_app_group_project-master/mobile_app_group_project-master/build/windows/mobile_app_group_project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

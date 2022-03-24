@@ -1,0 +1,10 @@
+^D:\FPT\CN7\MOBILE_APP_GROUP_PROJECT-MASTER\MOBILE_APP_GROUP_PROJECT-MASTER\BUILD\WINDOWS\CMAKEFILES\9E36444E5A3960380E08A51CA0B581AB\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
